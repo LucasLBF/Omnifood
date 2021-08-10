@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #444;
@@ -71,6 +71,7 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 0.8rem;
@@ -101,6 +102,40 @@ body {
   box-shadow: inset 0px 0px 0px 2px #fff;
 }
 
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9.6rem;
+}
+
+.navbar__logo {
+  width: 25rem;
+}
+
+.navbar__nav {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.navbar__nav-item:link,
+.navbar__nav-item:visited {
+  display: inline;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #cf711f;
+  transition: color 300ms;
+}
+
+.navbar__nav-item:hover,
+.navbar__nav-item:active {
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+}
+
 /* HERO SECTION */
 
 .section-hero {
@@ -126,6 +161,35 @@ body {
 
 .hero__image {
   width: 100%;
+}
+
+.customers {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.customer-img {
+  border: 3px solid #fdf2e9;
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: -1.6rem;
+}
+
+.customer-img:last-of-type {
+  margin-right: 0;
+}
+
+.customer-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.customer-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
 
 /* MISC */
