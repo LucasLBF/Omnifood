@@ -14,80 +14,150 @@
     />
   </head>
   <body>
-    <section class="section-hero">
-      <nav class="navbar">
-        <img
-          class="navbar__logo"
-          src="img/omnifood-logo.png"
-          alt="Omnifood logo"
-        />
-        <ul class="navbar__nav">
-          <a href="#" class="navbar__nav-item">Item 1</a>
-          <a href="#" class="navbar__nav-item">Item 2</a>
-          <a href="#" class="navbar__nav-item">Item 3</a>
-          <a href="#" class="navbar__nav-item">Item 4</a>
+    <header class="main-header">
+      <img
+        class="main-header__logo"
+        src="img/omnifood-logo.png"
+        alt="Omnifood logo"
+      />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav__nav-item">Item 1</a></li>
+          <li><a href="#" class="main-nav__nav-item">Item 2</a></li>
+          <li><a href="#" class="main-nav__nav-item">Item 3</a></li>
+          <li><a href="#" class="main-nav__nav-item">Item 4</a></li>
+          <li>
+            <a href="#" class="main-nav__nav-item main-nav-cta">Item 5</a>
+          </li>
         </ul>
       </nav>
-      <div class="hero">
-        <div class="hero__left-col">
-          <h1 class="heading-primary">
-            A healthy meal delivered to your door, every single day
-          </h1>
-          <p class="hero__description">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs.
-          </p>
-          <a href="#" class="btn btn--full margin-right-sm"
-            >Start eating healthy</a
-          >
-          <a href="#" class="btn btn--outline">Learn More &darr;</a>
-          <div class="customers">
-            <div class="customer-imgs">
-              <img
-                class="customer-img"
-                src="./img/customers/customer-1.jpg"
-                alt="Customer photo"
-              />
-              <img
-                class="customer-img"
-                src="./img/customers/customer-2.jpg"
-                alt="Customer photo"
-              />
-              <img
-                class="customer-img"
-                src="./img/customers/customer-3.jpg"
-                alt="Customer photo"
-              />
-              <img
-                class="customer-img"
-                src="./img/customers/customer-4.jpg"
-                alt="Customer photo"
-              />
-              <img
-                class="customer-img"
-                src="./img/customers/customer-5.jpg"
-                alt="Customer photo"
-              />
-              <img
-                class="customer-img"
-                src="./img/customers/customer-6.jpg"
-                alt="Customer photo"
-              />
-            </div>
-            <p class="customer-text">
-              <span>250,000+</span> meals delivered last year!
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero">
+          <div class="hero__left-col">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero__description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
             </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Start eating healthy</a
+            >
+            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+            <div class="customers">
+              <div class="customer-imgs">
+                <img
+                  class="customer-img"
+                  src="./img/customers/customer-1.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="customer-img"
+                  src="./img/customers/customer-2.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="customer-img"
+                  src="./img/customers/customer-3.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="customer-img"
+                  src="./img/customers/customer-4.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="customer-img"
+                  src="./img/customers/customer-5.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="customer-img"
+                  src="./img/customers/customer-6.jpg"
+                  alt="Customer photo"
+                />
+              </div>
+              <p class="customer-text">
+                <span>250,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero__right-col">
+            <img
+              class="hero__image"
+              src="img/hero.png"
+              alt="Woman eating food, meals in storage container and food bowls on a table"
+            />
           </div>
         </div>
-        <div class="hero__right-col">
-          <img
-            class="hero__image"
-            src="img/hero.png"
-            alt="Woman eating food, meals in storage container and food bowls on a table"
-          />
+      </section>
+      <section class="how-section">
+        <h2 class="section-heading">HOW IT WORKS</h2>
+        <p class="how-description">
+          Your daily dose of health in 3 simple steps
+        </p>
+        <div class="container grid grid--2-cols">
+          <div class="how-grid-col">
+            <h3 class="step-number">01</h3>
+            <h3 class="step-heading">Tell us what you like (and what not)</h3>
+            <p class="step-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum ex quod earum suscipit quibusdam veritatis obcaecati,
+              libero cupiditate, fugiat laborum minima iusto repellat,
+              praesentium dicta illo. Blanditiis accusantium illum assumenda?
+            </p>
+          </div>
+          <div class="how-grid-col">
+            <img
+              class="app-img"
+              src="/img/app/app-screen-1.png"
+              alt="Omnifood app on a cellphone screen"
+            />
+          </div>
+          <div class="how-grid-col">
+            <img
+              class="app-img"
+              src="/img/app/app-screen-2.png"
+              alt="Omnifood app on a cellphone screen"
+            />
+          </div>
+          <div class="how-grid-col">
+            <h3 class="step-number">02</h3>
+            <h3 class="step-heading">
+              Approve your weekly meal plan (and what not)
+            </h3>
+            <p class="step-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum ex quod earum suscipit quibusdam veritatis obcaecati,
+              libero cupiditate, fugiat laborum minima iusto repellat,
+              praesentium dicta illo. Blanditiis accusantium illum assumenda?
+            </p>
+          </div>
+          <div class="how-grid-col">
+            <h3 class="step-number">03</h3>
+            <h3 class="step-heading">
+              Receive meals at convenient time (and what not)
+            </h3>
+            <p class="step-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum ex quod earum suscipit quibusdam veritatis obcaecati,
+              libero cupiditate, fugiat laborum minima iusto repellat,
+              praesentium dicta illo. Blanditiis accusantium illum assumenda?
+            </p>
+          </div>
+          <div class="how-grid-col">
+            <img
+              class="app-img"
+              src="/img/app/app-screen-1.png"
+              alt="Omnifood app on a cellphone screen"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
