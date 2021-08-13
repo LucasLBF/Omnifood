@@ -14,7 +14,12 @@ Bold: 700
 
 - Line heights: 
 Default: 1 
+Medium: 1.2
 Paragraph: 1.6
+
+- Letter spacing
+Headings: -0.5px
+Sub-headings: 1.5px
 
 --- COLORS ---
 
@@ -22,7 +27,7 @@ Paragraph: 1.6
 #e67e22 /
 
 - TINTS:
-#fdf2e9 / 
+#fdf2e9 / #fae5d3 
 
 - SHADES: 
 #cf711f /
@@ -74,7 +79,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
 }
 
 .grid--2-cols {
@@ -85,13 +91,45 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  line-height: 1;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1;
   color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
+  margin-bottom: 9.6rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 8.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.sub-heading {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #cf711f;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.6rem;
 }
 
 .btn:link,
@@ -240,18 +278,34 @@ body {
 }
 
 /* HOW-IT-WORKS SECTION */
-.section-heading {
-  font-size: 7.4rem;
-  color: #333;
-  letter-spacing: 1;
-  margin-bottom: 1.6rem;
+
+.img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.how-description {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 8.6rem;
+.img-col::before,
+.img-col::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.img-col::before {
+  background-color: #fdf2e9;
+  width: 70%;
+  padding-bottom: 70%;
+  z-index: -2;
+}
+
+.img-col::after {
+  background-color: #fae5d3;
+  width: 60%;
+  padding-bottom: 60%;
+  z-index: -1;
 }
 
 .how-section {
@@ -259,12 +313,10 @@ body {
 }
 
 .step-number {
-  font-size: 6.2rem;
-}
-
-.step-heading {
-  font-size: 3rem;
-  margin-bottom: 2.4rem;
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 1.2rem;
 }
 
 .step-description {
@@ -274,5 +326,5 @@ body {
 }
 
 .app-img {
-  height: 50rem;
+  width: 40%;
 }
