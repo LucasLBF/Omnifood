@@ -35,7 +35,7 @@ Sub-headings: 1.5px
 - ACCENTS: 
 
 - GREYS: 
-#444 / #333
+#444 / #333 / #ccc / #888
 
 --- SHADOWS ---
 
@@ -89,6 +89,14 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -277,6 +285,34 @@ body {
   font-weight: 700;
 }
 
+/* FEATURED-IN SECTION */
+
+.featured-in-section {
+  padding: 4.8rem 0 3.2rem 0;
+  text-align: center;
+}
+
+.featured-in-heading {
+  text-align: center;
+  letter-spacing: 0.75px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.featured-in-logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 0.5;
+}
+
 /* HOW-IT-WORKS SECTION */
 
 .img-col {
@@ -327,4 +363,75 @@ body {
 
 .app-img {
   width: 40%;
+}
+
+/* MEALS SECTION */
+
+.meals-section {
+  padding: 9.6rem 0;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meal-card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+}
+
+.card-container {
+  padding: 0 1.6rem 2.4rem 2.4rem;
+}
+
+.meal-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+}
+
+.meal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.meal-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item-description {
+  font-size: 1.6rem;
+}
+
+.card-img {
+  border-radius: 0.8rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.diets-area {
+  align-self: flex-start;
+}
+
+.diets-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #e67e22;
+  margin-bottom: 4.8rem;
+}
+
+.diets-list {
+}
+
+.diets-list-item {
+  font-size: 1.6rem;
 }
