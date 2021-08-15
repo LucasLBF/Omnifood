@@ -41,6 +41,7 @@ Sub-headings: 1.5px
 
 --- BORDER RADIUS ---
 Default: 8px 
+Tags: 50px 
 
 --- WHITESPACE ---
 
@@ -148,7 +149,7 @@ body {
   text-decoration: none;
   border-radius: 0.8rem;
   font-size: 2rem;
-  transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms, box-shadow 300ms;
 }
 
 .btn--full:link,
@@ -174,8 +175,19 @@ body {
   box-shadow: inset 0px 0px 0px 2px #fff;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 3px;
+  transition: color 300ms;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 /* NAVBAR */
@@ -371,25 +383,30 @@ body {
   padding: 9.6rem 0;
 }
 
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.meal-card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: transform 400ms, box-shadow 400ms;
 }
 
-.meal-card {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 0.8rem;
+.meal-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+}
+
+.card-img {
+  width: 100%;
 }
 
 .card-container {
-  padding: 0 1.6rem 2.4rem 2.4rem;
+  padding: 2.4rem 3.2rem 3.2rem 3.2rem;
 }
 
 .meal-heading {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #e67e22;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
   margin-bottom: 3.2rem;
 }
 
@@ -403,19 +420,16 @@ body {
 .meal-list-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
 }
 
 .list-item-description {
-  font-size: 1.6rem;
-}
-
-.card-img {
-  border-radius: 0.8rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 1.6rem;
-  width: 100%;
+  font-size: 1.8rem;
 }
 
 .diets-area {
@@ -430,8 +444,79 @@ body {
 }
 
 .diets-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.diets-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.diets-list-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+.diets-list-description {
+  display: inline-block;
+  font-size: 1.8rem;
 }
 
 .diets-list-item {
   font-size: 1.6rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  color: #333;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: #69db7c;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffe066;
+}
+
+.all-recipes {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* MISC & HELPER CLASSES */
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.center-text {
+  text-align: center;
 }
