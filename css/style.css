@@ -579,3 +579,53 @@ strong {
 .gallery-photo:hover {
   transform: scale(1.1);
 }
+
+/* PRICING SECTION */
+
+.pricing-section {
+  padding: 9.6rem 0;
+}
+
+.pricing-card {
+  padding: 6.4rem;
+}
+.pricing__plan {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.2rem;
+}
+.pricing__fee {
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+.price-number {
+  font-size: 3.6rem;
+}
+.pricing__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 3.6rem;
+}
+
+/* .pricing__list-item {
+} */
+
+.item-description {
+  font-size: 1.8rem;
+}
+.pricing__subscribe-btn {
+  background-color: #e67e22;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 300ms;
+}
