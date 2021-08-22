@@ -36,7 +36,7 @@ Sub-headings: 1.5px
 
 - GREYS: 
 #444 / #333 / #ccc / #888
-#6f6f6: fightest grey allowed on #fdf2e9
+#6f6f6: lightest grey allowed on #fdf2e9
 
 --- SHADOWS ---
 
@@ -85,6 +85,10 @@ body {
   column-gap: 6.4rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -103,6 +107,28 @@ body {
 
 .grid--center-v {
   align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+.list-item-description {
+  font-size: 1.8rem;
 }
 
 .heading-primary,
@@ -411,28 +437,6 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.meal-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-}
-
-.meal-list-item {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.meal-icon {
-  font-size: 2.4rem;
-  color: #e67e22;
-}
-
-.list-item-description {
-  font-size: 1.8rem;
-}
-
 .diets-area {
   align-self: flex-start;
 }
@@ -586,46 +590,73 @@ strong {
   padding: 9.6rem 0;
 }
 
-.pricing-card {
-  padding: 6.4rem;
+.pricing {
+  border-top-left-radius: 3.6rem;
+  border-bottom-right-radius: 3.6rem;
+  width: 80%;
 }
+
+.pricing--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing--complete::after {
+  display: block;
+  content: "best value";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  top: 6%;
+  right: -9%;
+  transform: rotate(45deg);
+  background-color: #ffe066;
+  padding: 0.8rem 4.8rem;
+}
+
+.pricing__header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
 .pricing__plan {
   display: block;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 2.4rem;
+  font-weight: 600;
   color: #cf711f;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3.2rem;
 }
+
 .pricing__fee {
-  font-size: 2rem;
-  margin-bottom: 4.8rem;
-}
-.price-number {
   font-size: 3.6rem;
-}
-.pricing__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  margin-bottom: 3.6rem;
+  margin-bottom: 1.6rem;
 }
 
-/* .pricing__list-item {
-} */
-
-.item-description {
-  font-size: 1.8rem;
+.price-number {
+  font-size: 6.2rem;
 }
-.pricing__subscribe-btn {
-  background-color: #e67e22;
-  padding: 1.6rem 3.2rem;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.8rem;
-  border: none;
-  border-radius: 8px;
-  transition: background-color 300ms;
+
+.pricing__text {
+  font-size: 1.4rem;
+  color: #6f6f6f;
+  line-height: 1.6;
+}
+
+.pricing__subscribe {
+  text-align: center;
 }
