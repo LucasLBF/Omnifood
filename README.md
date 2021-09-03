@@ -1,5 +1,5 @@
 # Omnifood
-![omnifood](https://user-images.githubusercontent.com/76190126/130370425-04cd8e04-eb1d-421e-99a3-2b9d141fbd39.PNG)
+![image](https://user-images.githubusercontent.com/76190126/132064260-f2f9660d-85f7-4859-b67c-08c65edccbb9.png)
 
 Food delivery website project made as a part of Jonas Schedtmann's [Build Responsive Real World Websites.][COURSE]<br/><br/>
 <h3 align="center"><a href="https://lucaslbf.github.io/Omnifood/" target="_blank">Check out the website here (WIP)</a></h3>
