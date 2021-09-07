@@ -68,6 +68,7 @@ Tags: 50px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -75,6 +76,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #444;
+  overflow-x: hidden;
 }
 
 /* REUSABLE COMPONENTS */
@@ -251,6 +253,7 @@ body {
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -260,7 +263,7 @@ body {
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -292,6 +295,25 @@ body {
   background-color: #cf711f;
 }
 
+/* MOBILE */
+
+.mobile-nav-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* HERO SECTION */
 
 .hero-section {
@@ -309,7 +331,7 @@ body {
 .hero {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 0 3.2rem;
   display: grid;
   column-gap: 9.6rem;
   grid-template-columns: repeat(2, 1fr);

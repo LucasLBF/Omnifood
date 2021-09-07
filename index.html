@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Omnifood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +23,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       defer
     ></script>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -37,6 +39,10 @@
           </li>
         </ul>
       </nav>
+      <button id="mobile-btn" class="mobile-nav-btn">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon
+        ><ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="hero-section">
@@ -169,9 +175,7 @@
           </div>
           <div class="text-col">
             <p class="step-number">02</p>
-            <h3 class="heading-tertiary">
-              Approve your weekly meal plan (and what not)
-            </h3>
+            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
             <p class="step-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum ex quod earum suscipit quibusdam veritatis obcaecati,
@@ -181,9 +185,7 @@
           </div>
           <div class="text-col">
             <p class="step-number">03</p>
-            <h3 class="heading-tertiary">
-              Receive meals at convenient time (and what not)
-            </h3>
+            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
             <p class="step-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum ex quod earum suscipit quibusdam veritatis obcaecati,
