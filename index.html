@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat 
+      healthy again, 365 days per year. It's tailored to your personal tastes and
+      nutritional needs."
+    />
+    <link rel="icon" href="img/favicon-min.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never Cook Again!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+      defer
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -30,12 +43,16 @@
       <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav__nav-item">How it Works</a></li>
-          <li><a href="#" class="main-nav__nav-item">Meals</a></li>
-          <li><a href="#" class="main-nav__nav-item">Testimonials</a></li>
-          <li><a href="#" class="main-nav__nav-item">Pricing</a></li>
+          <li><a href="#how" class="main-nav__nav-item">How it Works</a></li>
+          <li><a href="#meals" class="main-nav__nav-item">Meals</a></li>
           <li>
-            <a href="#" class="main-nav__nav-item main-nav-cta">Try for free</a>
+            <a href="#testimonials" class="main-nav__nav-item">Testimonials</a>
+          </li>
+          <li><a href="#pricing" class="main-nav__nav-item">Pricing</a></li>
+          <li>
+            <a href="#cta" class="main-nav__nav-item main-nav-cta"
+              >Try for free</a
+            >
           </li>
         </ul>
       </nav>
@@ -56,10 +73,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#pricing" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn More &darr;</a>
             <div class="customers">
               <div class="customer-imgs">
                 <img
@@ -99,11 +116,15 @@
             </div>
           </div>
           <div class="hero__right-col">
-            <img
-              class="hero__image"
-              src="img/hero.png"
-              alt="Woman eating food, meals in storage container and food bowls on a table"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+              <img
+                class="hero__image"
+                src="img/hero.png"
+                alt="Woman eating food, meals in storage container and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -139,7 +160,7 @@
           </div>
         </div>
       </section>
-      <section class="how-section">
+      <section class="how-section" id="how">
         <div class="container">
           <span class="sub-heading">How it Works</span>
           <h2 class="heading-secondary">
@@ -202,7 +223,7 @@
           </div>
         </div>
       </section>
-      <section class="meals-section">
+      <section class="meals-section" id="meals">
         <div class="container center-text">
           <p class="sub-heading">Meals</p>
           <h2 class="heading-secondary">
@@ -356,7 +377,7 @@
           <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="testimonials-section">
+      <section class="testimonials-section" id="testimonials">
         <div class="testimonials-container">
           <span class="sub-heading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -498,7 +519,7 @@
           </figure>
         </div>
       </section>
-      <section class="pricing-section">
+      <section class="pricing-section" id="pricing">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -629,7 +650,7 @@
           </div>
         </div>
       </section>
-      <section class="cta-section">
+      <section class="cta-section" id="cta">
         <div class="container">
           <div class="cta-grid">
             <div class="cta-text-box">
@@ -706,7 +727,8 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifood, Inc. All right reserved
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            All right reserved
           </p>
         </div>
         <div class="address-col">
